@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace CheeseMVC.ViewModels
 {
-    public class AddCategoryViewModel
+    public class AddMenuViewModel
     {
         [Required]
-        [Display(Name = "Category Name")]
+        [Display(Name = "Menu Name")]
         public string Name { get; set; }
-
-        public AddCategoryViewModel()
-        {
-        }
     }
 }
